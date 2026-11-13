@@ -1,0 +1,19 @@
+{
+  "corpus": "kzx.fake_heartbeat",
+  "name": "Fake Heartbeat Monitor",
+  "description": "A fake heartbeat monitor HUD for Geometry Dash. Big red heart with a large lime number predicting the BPM; holds a high rate after you die instead of dropping to low immediately.",
+  "author": "kzx",
+  "version": "1.0.0",
+  "icon": "icon.png",
+  "dependencies": {
+    "Geode": ">=5.11.2 <6.0.0"
+  },
+  "link_defaults": {
+    "C++17": true
+  },
+  "scripts": {
+    "postinstall": "node scripts/refresh-settings.js",
+    "build": "node scripts/build.js"
+  },
+  "type": "mod"
+}
